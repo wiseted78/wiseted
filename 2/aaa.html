@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Love</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            overflow-x: hidden;
+            color: #2a1a1f;
+            background: linear-gradient(135deg, #ffe6ee, #ffffff, #ffd6e5);
+        }
+        
+        .header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .love {
+            font-size: 42px;
+            font-style: italic;
+            color: #ff4f7a;
+            letter-spacing: 5px;
+        }
+        
+        .heart {
+            position: fixed;
+            color: rgba(255, 60, 110, 0.55);
+            font-size: 18px;
+            animation: float 8s infinite ease-in-out;
+            pointer-events: none;
+        }
+        
+        .heart:nth-child(1) {
+            left: 10%;
+            top: 20%;
+            font-size: 14px;
+            animation-duration: 10s;
+        }
+        
+        .heart:nth-child(2) {
+            left: 30%;
+            top: 70%;
+            font-size: 22px;
+            animation-duration: 12s;
+        }
+        
+        .heart:nth-child(3) {
+            left: 60%;
+            top: 40%;
+            font-size: 18px;
+            animation-duration: 9s;
+        }
+        
+        .heart:nth-child(4) {
+            left: 80%;
+            top: 60%;
+            font-size: 26px;
+            animation-duration: 11s;
+        }
+        
+        .heart:nth-child(5) {
+            left: 50%;
+            top: 10%;
+            font-size: 16px;
+            animation-duration: 13s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-40px) translateX(20px) rotate(20deg);
+            }
+            100% {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+        }
+        
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 100px;
+            gap: 50px;
+        }
+        
+        .section.left {
+            flex-direction: row;
+        }
+        
+        .section.right {
+            flex-direction: row-reverse;
+        }
+        
+        img,
+        video {
+            width: 280px;
+            border-radius: 16px;
+        }
+        
+        .text {
+            width: 55%;
+            font-size: 18px;
+            line-height: 1.9;
+            font-style: italic;
+            color: #3a1f28;
+        }
+        
+        .line {
+            height: 2px;
+            margin: 20px 120px;
+            background: linear-gradient(to right, transparent, #ff4f7a88, transparent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+
+    <div class="header">
+        <div class="love">Love</div>
+    </div>
+
+    <!-- 1 (ВИДЕО) -->
+    <div class="section left">
+        <video controls>
+            <source src="1.mp4" type="video/mp4">
+        </video>
+
+        <div class="text">
+            Я готова уснуть навечно,<br> Лишь бы снова увидеть тебя.<br> Ночь обнимет меня так нежно,<br> Словно ты обнимаешь, любя.<br><br> Я люблю эту тихую вечность,<br> Где со мною твоя душа.<br> Ты мой ангел, моя бесконечность —<br> свет, что не
+            погаснет никогда.
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- 2 -->
+    <div class="section right">
+        <img src="2.jpg">
+        <div class="text">
+            Твои глаза мне дарят счастье,<br> Боюсь тебя я потерять.<br> Пусть не настанет день несчастья,<br> Когда всё начнёт угасать.
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- 3 (ВИДЕО) -->
+    <div class="section left">
+        <video controls>
+            <source src="3.mp4" type="video/mp4">
+        </video>
+
+        <div class="text">
+            Моя любовь к тебе чиста,<br> Я просто верю в чудеса.<br><br> Тебя я не хочу терять,<br> Хочу тебя я обнимать.<br><br> И каждый день, и каждый час<br> Тебя люблю я, как сейчас.<br><br> И в эту ночь я не усну,<br> В твоих глазах я утону.
+        </div>
+    </div>
+
+</body>
+
+</html>
